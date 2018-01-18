@@ -29,8 +29,16 @@ namespace ExamenOef2
         private void buttonVoegToe_Click(object sender, RoutedEventArgs e)
         {
             Computer computer = new Computer(textboxMAC.Text, textboxModel.Text);
-            MessageBox.Show(netwerk.VoegComputerToe(computer));
-            listboxOverview.Items.Add(computer.ToString());
+            
+            if (!netwerk.Computers.ContainsKey(computer.MAC))
+            {
+                MessageBox.Show(netwerk.VoegComputerToe(computer));
+                listboxOverview.Items.Add(computer.ToString());
+            }
+            else
+            {
+                MessageBox.Show("De computer is al aanwezig in het netwerk");
+            }
             textboxMAC.Clear();
             textboxModel.Clear();
         }

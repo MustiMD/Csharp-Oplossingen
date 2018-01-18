@@ -35,7 +35,7 @@ namespace ExamenOef2
         {
             return "Geselecteerde computer:" + Environment.NewLine +
                    Environment.NewLine +
-                   "Naam: " + MAC + Environment.NewLine +
+                   "MAC: " + MAC + Environment.NewLine +
                    "Model: " + Model + Environment.NewLine +
                    "IP adres: " + IPaddress;
             

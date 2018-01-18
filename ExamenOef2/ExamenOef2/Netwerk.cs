@@ -9,7 +9,7 @@ namespace ExamenOef2
     class Netwerk
     {
         public Dictionary<string, Computer> Computers { get; set; } = new Dictionary<string, Computer>();
-        public List<string> IP { private get; set; } = new List<string>();
+        public List<string> IP { get; set; } = new List<string>();
 
         public Netwerk()
         {
@@ -21,11 +21,11 @@ namespace ExamenOef2
         }
         public string VoegComputerToe(Computer c)
         {
-            GetIpAdres(c);
-            if (c.IPaddress != null)
+            //GetIpAdres(c);
+            if (GetIpAdres(c))
             {
                 Computers.Add(c.MAC, c);
-                return "toegevoegd";
+                return "De computer werd aan het netwerk gekoppeld";
             }
             else
             {
@@ -35,10 +35,15 @@ namespace ExamenOef2
             
         }
 
-        private void GetIpAdres(Computer c)
+        private bool GetIpAdres(Computer c)
         {
+            if (!IP.Any())
+            {
+                return false;
+            }
             c.IPaddress = IP.First();
             IP.Remove(c.IPaddress);
+            return true;
         }
     }
 }
