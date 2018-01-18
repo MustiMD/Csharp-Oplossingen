@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practicum 4 - Oefening 2", "Practicum 4 - Operatoren\Practicum 4 - Oefening 2.csproj", "{2094080C-75AE-4ECD-AB8E-AD67FECA8816}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Practicum 4 - Oefening 1", "Practicum 4 - Oefening 1\Practicum 4 - Oefening 1.csproj", "{5FD3E190-22A3-481A-B975-647441D94623}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2094080C-75AE-4ECD-AB8E-AD67FECA8816}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2094080C-75AE-4ECD-AB8E-AD67FECA8816}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2094080C-75AE-4ECD-AB8E-AD67FECA8816}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2094080C-75AE-4ECD-AB8E-AD67FECA8816}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FD3E190-22A3-481A-B975-647441D94623}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FD3E190-22A3-481A-B975-647441D94623}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FD3E190-22A3-481A-B975-647441D94623}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FD3E190-22A3-481A-B975-647441D94623}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

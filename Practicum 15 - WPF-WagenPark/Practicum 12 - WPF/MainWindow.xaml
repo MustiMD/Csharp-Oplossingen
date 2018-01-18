@@ -1,0 +1,26 @@
+﻿<Window x:Class="PracticumWPF_WagenPark.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PracticumWPF_WagenPark"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Label x:Name="label" Content="Nummerplaat" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label_Copy" Content="Merk" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxNummerplaat" HorizontalAlignment="Left" Height="23" Margin="133,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBoxMerk" HorizontalAlignment="Left" Height="23" Margin="133,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="buttonVoegToe" Content="Voeg toe" HorizontalAlignment="Left" Margin="178,69,0,0" VerticalAlignment="Top" Width="75" Click="buttonVoegToe_Click"/>
+        <TextBox x:Name="textBoxWagenpark" HorizontalAlignment="Left" Height="182" Margin="10,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="497" AcceptsReturn="True"/>
+        <Button x:Name="buttonExpertise" Content="Expertise" HorizontalAlignment="Left" Margin="283,102,0,0" VerticalAlignment="Top" Width="75" Click="buttonExpertise_Click"/>
+        <Button x:Name="buttonOverzicht" Content="Overzicht" HorizontalAlignment="Left" Margin="10,102,0,0" VerticalAlignment="Top" Width="75" Click="buttonOverzicht_Click"/>
+        <Label x:Name="label_Copy1" Content="Garage merk" HorizontalAlignment="Left" Margin="280,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxGarageMerk" HorizontalAlignment="Left" Height="23" Margin="372,13,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="buttonVoegGarageToe" Content="Voeg toe" HorizontalAlignment="Left" Margin="417,69,0,0" VerticalAlignment="Top" Width="75" Click="buttonVoegGarageToe_Click"/>
+        <Button x:Name="buttonReparatie" Content="Reparatie" HorizontalAlignment="Left" Margin="417,102,0,0" VerticalAlignment="Top" Width="75" Click="buttonReparatie_Click"/>
+        <Label x:Name="label_Copy2" Content="Garage naam" HorizontalAlignment="Left" Margin="277,41,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxGarageNaam" HorizontalAlignment="Left" Height="23" Margin="372,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>
