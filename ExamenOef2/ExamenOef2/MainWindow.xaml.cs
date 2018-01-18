@@ -45,13 +45,22 @@ namespace ExamenOef2
 
         private void buttonVerwijder_Click(object sender, RoutedEventArgs e)
         {
-            
+            Computer computer = listboxOverview.SelectedItem as Computer;
+            netwerk.Computers.Remove(computer.MAC);
+            netwerk.IP.Add(computer.IPaddress);
+            listboxOverview.Items.Remove(listboxOverview.SelectedItem);
+            labelSelectie.Content = "";
+
         }
 
         private void listboxOverview_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             Computer computer = listboxOverview.SelectedItem as Computer;
-            labelSelectie.Content = computer.Overzicht();
+            if (listboxOverview.SelectedItem != null)
+            {
+                labelSelectie.Content = computer.Overzicht();
+            }
+            
         }
     }
 }
