@@ -20,9 +20,30 @@ namespace ExamenOef2
     /// </summary>
     public partial class MainWindow : Window
     {
+        Netwerk netwerk = new Netwerk();
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void buttonVoegToe_Click(object sender, RoutedEventArgs e)
+        {
+            Computer computer = new Computer(textboxMAC.Text, textboxModel.Text);
+            MessageBox.Show(netwerk.VoegComputerToe(computer));
+            listboxOverview.Items.Add(computer.ToString());
+            textboxMAC.Clear();
+            textboxModel.Clear();
+        }
+
+        private void buttonVerwijder_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void listboxOverview_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            Computer computer = listboxOverview.SelectedItem as Computer;
+            computer.Overzicht();
         }
     }
 }

@@ -5,8 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ExamenOef2"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="461.142" Width="525">
     <Grid>
-        
+        <Label x:Name="labelMAC" Content="MAC" HorizontalAlignment="Left" Margin="10,24,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelModel" Content="Model" HorizontalAlignment="Left" Margin="10,67,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textboxMAC" HorizontalAlignment="Left" Height="23" Margin="102,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textboxModel" HorizontalAlignment="Left" Height="23" Margin="102,71,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="buttonVoegToe" Content="Voeg PC toe" HorizontalAlignment="Left" Margin="409,79,0,0" VerticalAlignment="Top" Width="75" Click="buttonVoegToe_Click"/>
+        <ListBox x:Name="listboxOverview" HorizontalAlignment="Left" Height="154" Margin="18,146,0,0" VerticalAlignment="Top" Width="372" SelectionChanged="listboxOverview_SelectionChanged"/>
+        <Button x:Name="buttonVerwijder" Content="Verwijder" HorizontalAlignment="Left" Margin="409,146,0,0" VerticalAlignment="Top" Width="75" Click="buttonVerwijder_Click"/>
+        <Label x:Name="labelSelectie" Content="" HorizontalAlignment="Left" Margin="18,322,0,0" VerticalAlignment="Top" Height="98" Width="204"/>
+
     </Grid>
 </Window>
