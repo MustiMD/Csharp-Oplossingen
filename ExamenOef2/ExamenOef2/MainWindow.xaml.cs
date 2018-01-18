@@ -33,7 +33,7 @@ namespace ExamenOef2
             if (!netwerk.Computers.ContainsKey(computer.MAC))
             {
                 MessageBox.Show(netwerk.VoegComputerToe(computer));
-                listboxOverview.Items.Add(computer.ToString());
+                listboxOverview.Items.Add(computer);
             }
             else
             {
@@ -51,7 +51,7 @@ namespace ExamenOef2
         private void listboxOverview_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             Computer computer = listboxOverview.SelectedItem as Computer;
-            computer.Overzicht();
+            labelSelectie.Content = computer.Overzicht();
         }
     }
 }
